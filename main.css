@@ -1,0 +1,380 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* TUTAJ KONCZY SIE RESET ERICKA MAYERA */
+
+#all
+{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    background-image: url("images/tlo4.jpg");
+    background-color: rosybrown;
+    font-family: 'Kalam', cursive;
+}
+#menu
+{
+    background-color: plum;
+    display: flex;
+    width: 1200px;
+    position: fixed;
+    justify-content: space-between;
+    font-size: 1.3em;
+    z-index: 2;
+    border-bottom: 2px solid black;
+
+}
+#menu_glowne
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+#menu_glowne div
+{
+    padding-right: 35px;
+    padding-left: 35px;
+    float: left;
+}
+#zwin
+{
+    display: none;
+    position: absolute;
+    margin-left: -30px;
+}
+#menu_glowne:hover #zwin
+{
+    display: block;
+    padding: 10px;
+    background-color: plum;
+}
+#zwin li
+{
+    padding: 15px 15px;
+}
+#menu_2
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#menu_2 div{
+    padding-right: 25px;
+    padding-left: 25px;
+    float: left;
+}
+#menu a
+{
+    text-decoration: none;
+    color: inherit;
+}
+#menu a:hover
+{
+    background-color: white;
+}
+#menu_ruchome
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+#opis
+{
+    opacity: 0.85;
+    background-color: rgb(33, 46, 13);
+    position: absolute;
+    margin-top: 200px;
+    height: 100px;
+    width: 650px;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 1.5em;
+}
+#opis .next{
+    width: 12px;
+    height: 12px;
+    border: 6px solid rgb(229, 255, 0);
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.all_next #actu{
+    width: 12px;
+    height: 12px;
+    border: 6px solid red;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+#zdjeciowe
+{
+    width: 650px; 
+    height: 510px;
+    border: 8px solid black;
+}
+#handmade
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+#handmade img
+{
+    height: 230px;
+    width: 250px;
+}
+
+.chmurka
+{
+    width: 900px;
+    height: 240px;
+    background-color: teal;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: 2px solid black;
+}
+#handmade .chmurka:nth-child(2n)
+{
+    background-color: tomato;
+    flex-direction: row-reverse;
+}
+#footer
+{
+    width: 750px;
+    height: 150px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 25px;
+    border: 5px solid black;
+    padding: 25px;
+    text-align: center;
+}
+#fba #fejs
+{
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    border: black;
+    position: fixed;
+    top: 200px;
+    right: 0px;
+    font-size: 1.5em;
+    z-index: 2;
+    text-align: center;
+    padding-top: 10px;
+}
+#fejs_logo{
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    border: black;
+    position: fixed;
+    top: 250px;
+    right: 0px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: none;
+    z-index: 2;
+}
+#fejs_logo img{
+    padding-left: 25px;
+    padding-right: 15px;
+}
+#witaj
+{
+    background-color: white;
+    width: 100%;
+    height: 150px;
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+}
+#glowny_kontener{
+    display: flex;
+    flex-wrap: wrap;
+}
+#pole_kostki{
+    width: 200px;
+    height: 300px;
+
+}
+#scena{
+    perspective: 5000px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    animation: obracanie 10s infinite alternate;
+    
+}
+#kostka{
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    animation: obracaniekostki 10s infinite alternate;
+
+}
+#lewa{
+    position: absolute;
+    background-image: url("images/1.jpg");
+    width: 100%;
+    height: 100%;
+    transform: rotateY(90deg) translateZ(-100px);
+}
+#prawa{
+    position: absolute;
+    background-image: url("images/2.jpg");
+    width: 100%;
+    height: 100%;
+    transform: rotateY(90deg) translateZ(100px);
+}
+#gora{
+    position: absolute;
+    background-image: url("images/3.jpg");
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100px) rotateX(90deg);
+}
+#tyl{
+    position: absolute;
+    background-image: url("images/4.jpg");
+    width: 100%;
+    height: 100%;
+    transform: translateZ(-100px) rotateY(180deg);
+}
+#przod{
+    position: absolute;
+    background-image: url("images/5.jpg");
+    width: 100%;
+    height: 100%;
+    transform: translateZ(100px);
+}
+#dol{
+    position: absolute;
+    background-image: url("images/6.jpg");
+    width: 100%;
+    height: 100%;
+    transform: translateY(100px) rotateX(90deg);
+}
+@keyframes obracaniekostki
+{
+    from 
+    {
+
+    }
+    to
+    {
+        transform: rotateY(360deg) rotateX(360deg);
+    }
+}
+
+@keyframes obracanie
+{
+    from 
+    {
+
+    }
+    to
+    {
+        transform: translateX(1000px);
+    }
+}
+#ukryty
+{
+    width: 650px;
+    height: 650px;
+    background-color: rgb(103, 103, 226);
+    color: black;
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    text-align: center;
+    padding-top: 15px;
+    border: 2px solid rgb(248, 212, 8);
+    border-radius: 15%;
+}
+#ukryty img{
+    margin-top: 15px;
+    border: 2px solid yellow;
+    border-radius: 15%;
+}
+#zamknij
+{
+    margin-left: 240px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+#stoj_kostka{
+    padding-top: 255px;
+}
+.chmurka img
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.chmurka div:first-child
+{
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+.chmurka div:first-child h3
+{
+    font-size: 1.5em;
+}
